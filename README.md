@@ -2,6 +2,10 @@
 
 It's a small rofi script which provides spell checking. If you accept one of the options presented, it will copy the word to your clipboard.
 
+With the exhilarating power of spellcheck...
+![rofithing](https://user-images.githubusercontent.com/425547/209489594-40219ab9-416f-48e4-bd50-338310e402f5.gif)
+Anything is possible!
+
 # Why?
 
 Because I'm Canadian and never sure what flavour/flavor of spelling rules applies, and bad enough at spelling that I'm paranoid whenever I want to type a word with an *-ance* or an *-ence* in it.
@@ -25,12 +29,12 @@ Download the `rofi-spellcheck.sh` file. Give it execution permissions and put it
 Then add it to your rofi configuration as a script mode, or bind it to a hotkey as a one-off invocation:
 
 ## Example one-off invocation
-```
-rofi -show spell -modes "spell:rofi-spellcheck.sh"
+```bash
+$ rofi -show spell -modes "spell:rofi-spellcheck.sh"
 ```
 
 ## Example configuration mode line
-```
+```css
 configuration {
     modes: "run,drun,spell:rofi-spellcheck.sh";
     font: "mono 12";
