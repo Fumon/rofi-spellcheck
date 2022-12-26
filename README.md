@@ -18,9 +18,17 @@ The future is now!
 
 # How?
 
-It uses the spell checking front end `enchant-2` internally. If there's some interest, I may make it fall back gracefully to aspell or anything else that supports 
+It uses the spell checking front end `enchant-2` internally. If there's some interest, I may make it fall back gracefully to aspell or anything else that supports the ancient ispell interactive format.
 
 It also uses `wl-clipboard` for copying to the clipboard. Obviously this doesn't work on X11 and I'll need to adapt this script to X11 soon as I still run i3 on some systems.
+
+## Dependencies
+
+- [`enchant` ](https://abiword.github.io/enchant/)
+- [`wl-clipboard`](https://github.com/bugaevc/wl-clipboard)
+    - I'll build in xclip support soon(tm)
+- [`rofi`](https://github.com/davatorium/rofi)
+    - For now you'll need a wayland compatible fork of rofi. I use [`rofi-lbonn-wayland-git`](https://aur.archlinux.org/packages/rofi-lbonn-wayland-git) on arch.
 
 # Okay but actually how do I use it?
 
